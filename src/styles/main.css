@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --primary-red: #cc0000;
+  --secondary-white: #f5f5f5;
+  --accent-blue: #3b4cca;
+  --text-dark: #222;
+  --shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--secondary-white);
+  justify-content: center;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  color: var(--text-dark);
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.app h1 {
+  font-size: 3em;
+  color: var(--primary-red);
+  text-shadow: 2px 2px 0 var(--text-dark);
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.instructions {
+  font-size: 1.2em;
+  font-style: italic;
+  color: var(--accent-blue);
+  margin-bottom: 30px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--accent-blue);
+  color: white;
+  padding: 20px 30px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px var(--shadow-color);
+  border: 3px solid var(--primary-red);
+}
+
+.scoreboard h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.scoreboard p {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.scoreboard span {
+  color: #ffd700;
+  margin-left: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 400px;
+
+  padding: 40px 20px;
+}
+
+.card {
+  max-width: 300px;
+  width: 100%;
+}
